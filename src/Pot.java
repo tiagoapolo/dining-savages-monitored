@@ -26,7 +26,7 @@ public class Pot {
             buffer[i] = i;
         }
         
-        System.out.println("\n==== Cook has filled the pot with "+ this.diningPot.getM() +" meals ====");
+        System.out.println("\n==== Cook has filled the pot with "+ this.M +" meals ====");
 
         this.count = this.M;
         this.empty = false;
