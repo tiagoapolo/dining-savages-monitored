@@ -20,13 +20,13 @@ public class Pot {
 
     public synchronized void fillPot() throws InterruptedException {
 
-        while(!this.empty) wait();
-        
-        System.out.println("\n==== Cook has filled the pot with "+ this.diningPot.getM() +" meals ====");
+        while(!this.empty) wait();               
 
         for (int i = 0; i < this.M; i++) {
             buffer[i] = i;
         }
+        
+        System.out.println("\n==== Cook has filled the pot with "+ this.diningPot.getM() +" meals ====");
 
         this.count = this.M;
         this.empty = false;
