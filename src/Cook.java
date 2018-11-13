@@ -17,7 +17,7 @@ public class Cook extends Thread {
             try{
 
                 diningPot.fillPot();
-                System.out.println("\n==== Cook has filled the pot with "+ this.diningPot.getM() +" meals ====");
+                // System.out.println("\n==== Cook has filled the pot with "+ this.diningPot.getM() +" meals ====");
 
                 int tempo = rand.nextInt(2000);
                 Thread.sleep(tempo);
